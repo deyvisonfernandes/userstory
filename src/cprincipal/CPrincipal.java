@@ -51,10 +51,9 @@ public class CPrincipal {
 					
 				}
 				
-			case 3:
-				
 			case 4:
 				System.out.println ("Saindo...");
+				input.close();
 				break;
 				
 			default:
