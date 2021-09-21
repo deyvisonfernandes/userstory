@@ -39,6 +39,17 @@ public class CPrincipal {
 				listaDeUsuarios.add(usuario);
 				
 			case 2:
+				System.out.println ("Lista de usuários cadastrados:");
+				for (int i = 0; i < listaDeUsuarios.size(); i++) {
+					System.out.println ("Nome do Usuario: " + listaDeUsuarios.get(i).getNomeCompleto());
+					System.out.println ("Email do Usuario: " + listaDeUsuarios.get(i).getEmail());
+					System.out.println ("Senha do Usuario: " + listaDeUsuarios.get(i).getSenha());
+					System.out.println ("Status do Usuario: " + listaDeUsuarios.get(i).isAtivo());
+					System.out.println ("Nome do Usuario: " + listaDeUsuarios.get(i).getNomeCompleto());
+					System.out.println ("Data de Nascimento do Usuario: " + listaDeUsuarios.get(i).getDataDeNascimento());
+					System.out.println ("ID do Usuario: " + listaDeUsuarios.get(i).getId());
+					
+				}
 				
 			case 3:
 				
