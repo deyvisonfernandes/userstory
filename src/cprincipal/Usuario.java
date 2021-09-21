@@ -1,7 +1,5 @@
 package cprincipal;
 
-import java.util.Date;
-
 public class Usuario {
 	private int id = 000;
 	private String nomeCompleto;
