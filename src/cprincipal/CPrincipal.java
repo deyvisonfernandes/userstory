@@ -1,7 +1,7 @@
 package cprincipal;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 public class CPrincipal {
@@ -10,6 +10,7 @@ public class CPrincipal {
 		boolean condicao = true; 
 		int escolha;
 		Scanner input = new Scanner (System.in);
+		List<Usuario> listaDeUsuarios = new ArrayList<Usuario>();
 		while (condicao == true) {
 			System.out.println ("=======Menu de Interacao=======");
 			System.out.println ("1 - Cadastrar Usuário");
@@ -21,6 +22,21 @@ public class CPrincipal {
 			escolha = input.nextInt();
 			switch (escolha) {
 			case 1:
+				System.out.println ("Digite o nome do Usuario: ");
+				String nome = input.nextLine();
+				System.out.println ("Digite o email do Usuario: ");
+				String email = input.nextLine();
+				System.out.println ("Digite a senha do Usuario: ");
+				String senha = input.nextLine();
+				System.out.println ("Digite a data de nascimento do Usuario (dd/mm/yy: ");
+				String dataDeNascimento = input.nextLine();
+				System.out.println ("Digite o perfil do Usuario: ");
+				String perfil = input.nextLine();
+				boolean ativo = true;
+				System.out.println ("Id: ");
+				int id = input.nextInt();
+				Usuario usuario = new Usuario(id, nome, dataDeNascimento, senha, email, ativo, perfil);
+				listaDeUsuarios.add(usuario);
 				
 			case 2:
 				

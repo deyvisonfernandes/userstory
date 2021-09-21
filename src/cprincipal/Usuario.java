@@ -9,7 +9,7 @@ public class Usuario {
 	private boolean ativo;
 	private String perfil;
 
-	public Usuario(int id, String nomeCompleto) {
+	public Usuario(int id, String nomeCompleto, String dataDeNascimento, String senha, String email, boolean ativo, String perfil) {
 		this.id = id;
 		this.nomeCompleto = nomeCompleto;
 		this.dataDeNascimento = dataDeNascimento;
