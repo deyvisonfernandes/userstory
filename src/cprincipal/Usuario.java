@@ -1,34 +1,53 @@
 package cprincipal;
-import java.util.Scanner;
+
 import java.util.Date;
-import java.util.Scanner;
 
 public class Usuario {
-	int id = 000;
-	String NomeCompleto;
-	Date datadenascimento;
-	String senha;
-	String email;
-	boolean ativo;
-	String perfil;
-	
-	
-	public Usuario(double x) {
-		Scanner input = new Scanner(System.in);
-		System.out.println ("Digite o nome do Usuário: ");
-		NomeCompleto = input.nextLine();
-		System.out.println ("Digite o email do Usuário: ");
-		email = input.nextLine();
-		System.out.println ("Digite o perfil do Usuário (Administrador/Cliente/Fornecedor): ");
-		perfil = input.nextLine();
-		System.out.println ("Digite a senha do Usuário: ");
-		senha = input.nextLine();
-		ativo = true;
-		
-		
+	private int id = 000;
+	private String nomeCompleto;
+	private String dataDeNascimento;
+	private String senha;
+	private String email;
+	private boolean ativo;
+	private String perfil;
+
+	public Usuario(int id, String nomeCompleto) {
+		this.id = id;
+		this.nomeCompleto = nomeCompleto;
+		this.dataDeNascimento = dataDeNascimento;
+		this.senha = senha;
+		this.email = email;
+		this.ativo = ativo;
+		this.perfil = perfil;
+
 	}
-	
-	
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public String getNomeCompleto() {
+		return nomeCompleto;
+	}
+
+	public String getDataDeNascimento() {
+		return dataDeNascimento;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public boolean isAtivo() {
+		return ativo;
+	}
+
+	public String getPerfil() {
+		return perfil;
+	}
 
 }
