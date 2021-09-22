@@ -48,10 +48,11 @@ public class CPrincipal {
 					System.out.println ("Nome do Usuario: " + listaDeUsuarios.get(i).getNomeCompleto());
 					System.out.println ("Data de Nascimento do Usuario: " + listaDeUsuarios.get(i).getDataDeNascimento());
 					System.out.println ("ID do Usuario: " + listaDeUsuarios.get(i).getId());
-					break;
+					
 				}
-				
+				break;
 			case 4:
+				condicao = false;
 				System.out.println ("Saindo...");
 				input.close();
 				break;
